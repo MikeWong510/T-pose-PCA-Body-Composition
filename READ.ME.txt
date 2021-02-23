@@ -1,0 +1,16 @@
+***These are the instructions to using the T-pose model for body composition estimates. 
+***Must send request for shape model to johnshep@hawaii.edu. Shape model is too large to be saved on Github.
+
+1. Repose your Fit3D meshes using Meshcapade GmbH (cost is 5 Euros per scan). Contact https://meshcapade.com/ for help.
+	a. pose: T
+	b. up axis: +Y
+	c. look axis: +z
+	d. resolution: high
+	e. units: meters
+	f. hands: splay
+
+2. Once you have the T-pose mesh, open the R script.
+3. Set your working directory (your mesh needs to be in the working directory), load the PCA model, and run the script.
+4. Total fat mass should have added to your dataframe.
+5. To get other whole-body and regional body composition indices, follow the equations published in 
+   Wong et al. Digitally Reposing 3D Optical Scans to Standardized Pose Improves Accuracy and Precision of Body Composition. 2021.
